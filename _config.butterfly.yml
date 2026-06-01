@@ -1,0 +1,176 @@
+# -----------------------------------------------
+# Butterfly Theme Configuration
+# Recovered from deployed site at urmymoon4ever.github.io
+# -----------------------------------------------
+
+# Top banner image for each page
+index_img: /img/kumufengchun.png
+archive_img: /img/kumufengchun.png
+tag_img: /img/kumufengchun.png
+category_img: /img/kumufengchun.png
+
+# The height of the top image on index page (100vh = full screen)
+# Other pages use a shorter banner
+index_top_img_height: 100vh
+archive_top_img_height: 300px
+tag_top_img_height: 300px
+category_top_img_height: 300px
+
+# Site title and subtitle position on index page
+index_site_info_top:
+
+# Navigation menu
+# Format: Label: /path/ || icon
+# For expandable menu: Label||icon:
+#   child: /path/ || icon
+menu:
+  主页: / || fas fa-home
+  博文||fas fa-graduation-cap:
+    分类: /categories/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    归档: /archives/ || fas fa-folder-open
+  生活||fas fa-list:
+    相册: /photos/ || fas fa-camera-retro
+    音乐: /music/ || fas fa-music
+    影视: /movies/ || fas fa-video
+  友链: /links/ || fas fa-link
+  留言板: /comment/ || fas fa-paper-plane
+  关于笔者: /about/ || fas fa-heart
+
+# Site info
+avatar:
+  img: /img/20250322_1.jpg
+  effect: false
+
+# Social settings
+social:
+  fab fa-github: https://github.com/urmymoon4ever || Github
+
+# Site description
+subtitle:
+  enable: true
+  # Typewriter Effect
+  effect: true
+  typed: false
+  text:
+    - 江山虽道阻，意合不为殊
+
+# Background
+background: /img/kumufengchun.png
+
+# Page loading animation
+preloader:
+  enable: true
+  source: 3
+
+# Post meta display
+post_meta:
+  page:
+    post:
+      meta:
+        - date
+        - updated
+        - categories
+        - wordcount
+        - pv
+
+# Code Blocks
+highlight_theme: default
+
+# Local search
+local_search:
+  enable: true
+  preload: false
+  top_n_per_article: 1
+  unescape: false
+
+# Copy settings
+copy:
+  enable: true
+  copyright:
+    enable: true
+    limit_count: 1000
+
+# Fancybox (lightbox)
+fancybox: true
+
+# Lazyload
+lazyload:
+  enable: true
+  field: site
+  placeholder: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+# PJAX
+pjax:
+  enable: true
+
+# Snackbar (notification)
+snackbar:
+  enable: false
+
+# Word count
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+
+# Busuanzi (page view counter)
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# Valine comments
+valine:
+  appId: uJktoYdNPRTM9CZlXZWVNXFu-gzGzoHsz
+  appKey: Ee1cYDj6KD6Xnz9tMR6wUl0m
+  avatar: monsterid
+  placeholder: 留下你的足迹吧~
+  visitor: false
+
+# APlayer settings - must use aplayerInject for the CSS/JS,
+# then inject the HTML div with actual music source
+aplayerInject:
+  enable: true
+  per_page: true
+
+# Inject custom CSS/JS
+inject:
+  head:
+  bottom:
+    # NetEase Music Player (fixed bottom bar)
+    - <div class="aplayer no-destroy" data-id="13821602611" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"></div>
+    # Activate power mode
+    - <script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script>
+    - <script>POWERMODE.colorful = true; POWERMODE.shake = true; POWERMODE.mobile = false; document.body.addEventListener('input', POWERMODE);</script>
+    # Click show text
+    - <script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="false" async="async"></script>
+
+# Right side settings
+rightside_scroll_percent: true
+
+# Footer settings
+# Set to true to use the default background image, or specify a custom image path
+footer_img: true
+footer:
+  owner:
+    enable: true
+    since: 2025
+  custom_text: 人生先有一次枯木逢春，然后有亿万次的春和景明。
+
+# Favicon
+favicon: /img/moon_star_favicon.ico
+
+# Dark mode
+darkmode:
+  enable: true
+
+# Fireworks / canvas effects
+# Snow effect
+snow:
+  enable: true
+
+# Annoucement
+card_announcement:
+  enable: true
+  content: 爱上你是我的宿命
